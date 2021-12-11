@@ -21,7 +21,7 @@
 
   <label>
     Password
-    <input type="password" name="password" value="{{ flashMessages.get('email') ?? '' }}" />
+    <input type="password" name="password" />
     @if (flashMessages.has('errors.password'))
       <small style="color: red;">
         {{ flashMessages.get('errors.password') }}
